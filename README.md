@@ -9,7 +9,7 @@ In the following project, we investigate whether head restraints alter saccade t
 ## Preprocessing
 Before performing any tests on the data which was provided to us, we first examined the data for possible noise. In many of the samples, there were random jumps or high-speed artefacts in the velocity (see figure a). In fact, we discovered several examples of strange saccades which reached a critical velocity of over 1.4E8 deg/s. Although it's difficult to speculate what this error might be attributed to, it is not uncommon for eye tracking devices to track two competing cornea reflections because the individual was wearing contact lenses [1]. This might partially explain the sudden jump in velocity in many of the samples. Nevertheless, as part of a pre-processing step, we eliminated these outliers or noise from the data as they could be perceived as saccades when in fact they most likely are not. 
 
-![alt text](https://github.com/adam-norris/EyeTracking_Project/master/velocityLineChart.jpg?raw=true)
+![alt text](https://github.com/adam-norris/EyeTracking_Project/master/velocityLineChart.png?raw=true)
 
 
 After examining the data closely and doing pre-processing mentioned above, we experimented with different velocity thresholds for the I-VT algorithm. Figure b shows the measured velocity over 6 seconds for participant 1 viewing stimulus one. As is apparent in the graph, most of the saccades reach a peak velocity of approximately 300 degrees/s. The smallest saccades seem to hover around or above 50 degrees. Therefore, we decided on using a velocity threshold of 50 degrees.
