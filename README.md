@@ -16,6 +16,10 @@ After examining the data closely and doing pre-processing mentioned above, we ex
 
 To detect the saccades, we modified the implementation of I-VT which was presented in the exercise portion of the lecture to also detect saccades as well as fixations. We also extended the algorithm to gather other interesting data such as peak velocity and amplitude of the saccades. Since there was no measure of elapsed time found in the data set, we observed that for 6 seconds of data, there was approximately 3000 recorded velocities, therefore, we made the assumption that for each recorded velocity pair, a time of 2 ms had been passed.
 
+![pic](boxChart.png)
+
+![pic](saccadeDurationHist.png)
+
 ## HYPOTHESIS TESTING
 In order to measure whether each respective condition had any influence on the participants eye movements or more specifically, the saccadic duration, we performed a paired t-test as previously mentioned. The paired t-test is used when two dependent samples are related to each other and one would like to measure the effect that some variable has on these samples. In this study, the same participants were tested under two different conditions, namely head-free and head-fixed. Therefore, testing the null hypothesis ($H_0$) is simply measuring whether the mean difference between two sets of observations is zero. Since there is a possibility that the conditions could either shorten or lengthen the duration of a saccades, we performed a two-tail t-test. To reject the null hypothesis, the two-tailed alternative hypothesis ($H_1$) assumes that the mean difference is not equal to zero.
 
